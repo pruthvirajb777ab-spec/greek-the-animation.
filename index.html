@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GREEK THE ANIMATION — Beyond Reality. Into Imagination.</title>
+<meta name="description" content="Greek The Animation — a cinematic 3D animation, VFX and motion studio. Beyond reality. Into imagination.">
+<meta name="theme-color" content="#07050d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307050d'/%3E%3Cpath d='M44 22a15 15 0 1 0 2 12H33' fill='none' stroke='%238b3dff' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <svg class="logo-svg" viewBox="0 0 120 120" aria-hidden="true">
+    <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(179,136,255,.25)" stroke-width="2"/>
+    <path d="M84 40A30 30 0 1 0 90 66H62" fill="none" stroke="#8b3dff" stroke-width="7" stroke-linecap="round"/>
+  </svg>
+  <div class="ld-name">GREEK <span>THE ANIMATION</span></div>
+  <div class="ld-bar"><i></i></div>
+  <div class="ld-num">0</div>
+</div>
+<div class="wipe"></div>
+<div class="cur-dot"></div><div class="cur-ring"></div>
+
+<canvas id="hero3d"></canvas>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="#home" class="brand" data-nav>
+    <svg viewBox="0 0 120 120" width="30" height="30" aria-hidden="true"><path d="M84 40A30 30 0 1 0 90 66H62" fill="none" stroke="#8b3dff" stroke-width="10" stroke-linecap="round"/></svg>
+    <span>GREEK <b>THE ANIMATION</b></span>
+  </a>
+  <nav class="links">
+    <a href="#home" data-nav>Home</a>
+    <a href="#about" data-nav>About</a>
+    <a href="#animations" data-nav>Animations</a>
+    <a href="#showcase" data-nav>3D Showcase</a>
+    <a href="#services" data-nav>Services</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+  <button class="snd" id="snd" aria-label="Toggle sound (muted by default)"><i></i><i></i><i></i><i></i></button>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</header>
+<div class="menu" id="menu">
+  <a href="#home" data-nav>Home</a><a href="#about" data-nav>About</a><a href="#animations" data-nav>Animations</a>
+  <a href="#showcase" data-nav>3D Showcase</a><a href="#services" data-nav>Services</a><a href="#contact" data-nav>Contact</a>
+</div>
+
+<main>
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="fb-orb" aria-hidden="true"></div>
+  <div class="hero-top"><span class="tag">BEYOND REALITY. INTO IMAGINATION.</span></div>
+  <div class="hero-bot">
+    <h1 data-split>ENTER THE WORLD OF IMAGINATION.</h1>
+    <p class="lead">A cinematic studio for 3D animation, visual effects and immersive digital worlds.</p>
+    <div class="cta">
+      <a href="#animations" class="btn magnetic" data-nav>Explore</a>
+      <a href="#showcase" class="btn ghost magnetic" data-nav>3D Showcase</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><i></i>SCROLL</div>
+</section>
+
+<div class="marquee"><div><span>3D ANIMATION ✦ CHARACTER DESIGN ✦ VISUAL EFFECTS ✦ MOTION GRAPHICS ✦ 3D MODELLING ✦ CREATIVE WEB ✦ </span><span>3D ANIMATION ✦ CHARACTER DESIGN ✦ VISUAL EFFECTS ✦ MOTION GRAPHICS ✦ 3D MODELLING ✦ CREATIVE WEB ✦ </span></div></div>
+
+<!-- ABOUT -->
+<section id="about" class="sec">
+  <div class="wrap two">
+    <div>
+      <span class="eyebrow">01 — ABOUT US</span>
+      <h2 class="sec-t" data-split>WE BUILD WORLDS THAT DO NOT EXIST. YET.</h2>
+    </div>
+    <div class="about-copy">
+      <p class="reveal">Greek The Animation is a creative studio built on one belief: imagination deserves a production budget of the mind. We merge cinematic storytelling, real-time 3D and motion design to create experiences that feel like stepping through a portal.</p>
+      <p class="reveal">From character-driven shorts to VFX sequences and interactive web worlds, every frame is crafted with light, depth and emotion — bold, futuristic, and unmistakably ours.</p>
+      <div class="stats reveal">
+        <div><b data-count="48">0</b><span>Projects</span></div>
+        <div><b data-count="12">0</b><span>Countries</span></div>
+        <div><b data-count="300">0</b><span>Hours rendered</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANIMATIONS -->
+<section id="animations" class="sec">
+  <div class="wrap">
+    <span class="eyebrow">02 — OUR ANIMATIONS</span>
+    <h2 class="sec-t" data-split>SELECTED WORKS</h2>
+    <div class="filters reveal">
+      <button class="f-btn on" data-f="all">All</button>
+      <button class="f-btn" data-f="animation">Animation</button>
+      <button class="f-btn" data-f="vfx">VFX</button>
+      <button class="f-btn" data-f="motion">Motion Graphics</button>
+      <button class="f-btn" data-f="3d">3D Design</button>
+    </div>
+    <div class="grid cards">
+      <!-- To enable video previews: put an mp4 in assets/videos/ and set data-src="assets/videos/yourfile.mp4" -->
+      <article class="card" data-cat="animation"><div class="card-in tilt"><div class="art" style="--h:268"><video class="pv" muted loop playsinline preload="none" data-src=""></video></div><div class="meta"><small>ANIMATION</small><h3>Titan Dawn</h3><p>A mythic short film about the last sunrise.</p></div></div></article>
+      <article class="card" data-cat="vfx"><div class="card-in tilt"><div class="art" style="--h:300"><video class="pv" muted loop playsinline preload="none" data-src=""></video></div><div class="meta"><small>VFX</small><h3>Rift Protocol</h3><p>Reality-tearing energy sequences.</p></div></div></article>
+      <article class="card" data-cat="motion"><div class="card-in tilt"><div class="art" style="--h:240"><video class="pv" muted loop playsinline preload="none" data-src=""></video></div><div class="meta"><small>MOTION GRAPHICS</small><h3>Pulse Identity</h3><p>Kinetic brand system with living type.</p></div></div></article>
+      <article class="card" data-cat="3d"><div class="card-in tilt"><div class="art" style="--h:210"><video class="pv" muted loop playsinline preload="none" data-src=""></video></div><div class="meta"><small>3D DESIGN</small><h3>Obsidian Sculpture</h3><p>Hard-surface chrome study in dark light.</p></div></div></article>
+      <article class="card" data-cat="animation"><div class="card-in tilt"><div class="art" style="--h:285"><video class="pv" muted loop playsinline preload="none" data-src=""></video></div><div class="meta"><small>ANIMATION</small><h3>Last Lantern</h3><p>A stylised character piece in a drowned city.</p></div></div></article>
+      <article class="card" data-cat="vfx"><div class="card-in tilt"><div class="art" style="--h:320"><video class="pv" muted loop playsinline preload="none" data-src=""></video></div><div class="meta"><small>VFX</small><h3>Ashfall</h3><p>Volumetric smoke, embers and debris.</p></div></div></article>
+      <article class="card" data-cat="motion"><div class="card-in tilt"><div class="art" style="--h:255"><video class="pv" muted loop playsinline preload="none" data-src=""></video></div><div class="meta"><small>MOTION GRAPHICS</small><h3>Neon Typography Reel</h3><p>Type that moves like light.</p></div></div></article>
+      <article class="card" data-cat="3d"><div class="card-in tilt"><div class="art" style="--h:195"><video class="pv" muted loop playsinline preload="none" data-src=""></video></div><div class="meta"><small>3D DESIGN</small><h3>Chrome Garden</h3><p>Surreal botanical forms in liquid metal.</p></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 3D SHOWCASE -->
+<section id="showcase" class="sec">
+  <div class="wrap">
+    <span class="eyebrow">03 — 3D SHOWCASE</span>
+    <h2 class="sec-t" data-split>TOUCH THE THIRD DIMENSION</h2>
+    <div class="show">
+      <div class="show-view drag">
+        <canvas id="showcase3d"></canvas>
+        <div class="fb-cube" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <span class="hint">DRAG TO ROTATE</span>
+      </div>
+      <div class="show-ctl glass">
+        <h4>Model</h4>
+        <div class="row">
+          <button class="chip on" data-m="knot">Knot</button><button class="chip" data-m="ico">Crystal</button>
+          <button class="chip" data-m="torus">Torus</button><button class="chip" data-m="crystal">Shard</button>
+        </div>
+        <h4>Material</h4>
+        <div class="row">
+          <button class="chip" data-mat="chrome">Chrome</button><button class="chip on" data-mat="violet">Violet</button><button class="chip" data-mat="neon">Neon</button>
+        </div>
+        <h4>Light intensity</h4>
+        <input type="range" id="light" min="0" max="6" step=".1" value="2.5">
+        <label class="chk"><input type="checkbox" id="wire"> Wireframe</label>
+        <label class="chk"><input type="checkbox" id="auto" checked> Auto-rotate</label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="sec">
+  <div class="wrap">
+    <span class="eyebrow">04 — OUR SERVICES</span>
+    <h2 class="sec-t" data-split>WHAT WE CREATE</h2>
+    <div class="grid svc">
+      <div class="s-card reveal"><b>01</b><h3>3D Animation</h3><p>Cinematic character and environment animation, from storyboard to final render.</p></div>
+      <div class="s-card reveal"><b>02</b><h3>Character Design</h3><p>Original heroes, creatures and personalities designed to be remembered.</p></div>
+      <div class="s-card reveal"><b>03</b><h3>Visual Effects</h3><p>Simulations, particles, compositing and impossible shots made believable.</p></div>
+      <div class="s-card reveal"><b>04</b><h3>Motion Graphics</h3><p>Titles, brand systems and kinetic storytelling with rhythm.</p></div>
+      <div class="s-card reveal"><b>05</b><h3>3D Modelling</h3><p>Hard-surface, organic and product models with production-ready topology.</p></div>
+      <div class="s-card reveal"><b>06</b><h3>Creative Web Experiences</h3><p>Real-time 3D websites and interactive worlds that run in any browser.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec">
+  <div class="wrap two">
+    <div>
+      <span class="eyebrow">05 — CONTACT</span>
+      <h2 class="sec-t" data-split>LET US BUILD YOUR DIMENSION</h2>
+      <p class="reveal mail-line">Write to us: <a href="mailto:hello@greektheanimation.com" id="mailLink">hello@greektheanimation.com</a></p>
+      <div class="social reveal">
+        <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com" target="_blank" rel="noopener">X</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <form id="contactForm" class="glass form reveal">
+      <input name="name" placeholder="Your name" required autocomplete="name">
+      <input name="email" type="email" placeholder="Your email" required autocomplete="email">
+      <textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+      <button class="btn magnetic" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-logo">GREEK <b>THE ANIMATION</b></div>
+    <p>BEYOND REALITY. INTO IMAGINATION.</p>
+    <small>© <span id="yr"></span> Greek The Animation. All rights reserved.</small>
+  </div>
+</footer>
+
+<noscript><p style="position:fixed;inset:auto 0 0 0;padding:12px;background:#8b3dff;color:#fff;text-align:center;z-index:2000">Please enable JavaScript to enter the experience.</p></noscript>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
